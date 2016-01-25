@@ -31,7 +31,7 @@ int main()
 
     bool bRunning = true;
 
-    // Endlosschleife, bis bRunning auf 'false' gesetzt wird
+    // Endlosschleife, bis bRunning auf 'false' gesetzt wird vv
     while (bRunning)
     {
         int menuEntry = gui.showMenu();
