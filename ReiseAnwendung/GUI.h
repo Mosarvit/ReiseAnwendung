@@ -1,16 +1,20 @@
 #ifndef TRAVEL_GUI
 #define TRAVEL_GUI
 
-#include "TravelNetwork.h"
+#include <vector>
+
+#include "PreisMap.h"
 #include "Booking.h"
 
-class TravelGUI
+using namespace std;
+
+class GUI
 {
 
 public:
 
     // TravelNetwork wird als Referenz in der Klasse gespeichert, damit sie damit arbeiten kann.
-    TravelGUI(TravelNetwork& rNetwork) : m_rNetwork(rNetwork) { }
+	GUI(vector<PreisMap*> preisMaps) : m_rPreisMaps(preisMaps) { }
 
     // zeigt ein Hauptmenü an.
     // Rückgabewert: der vom Nutzer gewählte Menüpunkt
@@ -18,7 +22,7 @@ public:
 
     // Nutzerinteraktion zum Buchen eines Fluges
     // Rückgabewert: 'true', wenn die vom Nutzer gewählte Route gebucht werden soll, sonst 'false'
-    bool flightBooking();
+	bool angebotBerechnung(Node& rStart, Node& rEnde);
 
     // Gibt eine Liste aller gebuchten Reisen aus.
     void showBookingList();
@@ -26,9 +30,11 @@ public:
 
 private:
 
-    Node* readCity(); // Helper Funktion, um eine Stadt einzulesen.
+	int readAnzahl(); // Helper Funktion, um eine Stadt einzulesen.
 
-    TravelNetwork& m_rNetwork;
+	//PreisMap& m_rNetwork;
+
+	vector<PreisMap*> m_rPreisMaps;
 
     std::list<Booking> m_bookings;
 

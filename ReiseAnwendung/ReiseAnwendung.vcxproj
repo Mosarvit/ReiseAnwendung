@@ -14,12 +14,13 @@
     <ProjectGuid>{376D786B-F00F-4B16-A90A-E5ADAA1AAD15}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ReiseAnwendung</RootNamespace>
+    <ProjectName>LeiterplattenHerstellung</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -80,18 +81,18 @@
     <ClCompile Include="Graph.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Node.cpp" />
-    <ClCompile Include="TravelGUI.cpp" />
-    <ClCompile Include="TravelNetwork.cpp" />
+    <ClCompile Include="GUI.cpp" />
+    <ClCompile Include="PreisAngebot.cpp" />
+    <ClCompile Include="PreisMap.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Booking.h" />
-    <ClInclude Include="BusRoute.h" />
+    <ClInclude Include="PreisAngebot.h" />
     <ClInclude Include="Edge.h" />
-    <ClInclude Include="FlightRoute.h" />
     <ClInclude Include="Graph.h" />
     <ClInclude Include="Node.h" />
-    <ClInclude Include="TravelGUI.h" />
-    <ClInclude Include="TravelNetwork.h" />
+    <ClInclude Include="GUI.h" />
+    <ClInclude Include="PreisMap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

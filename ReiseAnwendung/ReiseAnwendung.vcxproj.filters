@@ -30,11 +30,14 @@
     <ClCompile Include="main.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="TravelNetwork.cpp">
+    <ClCompile Include="PreisMap.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="TravelGUI.cpp">
+    <ClCompile Include="GUI.cpp">
       <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="PreisAngebot.cpp">
+      <Filter>Graph</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -47,19 +50,16 @@
     <ClInclude Include="Edge.h">
       <Filter>Graph</Filter>
     </ClInclude>
-    <ClInclude Include="FlightRoute.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="BusRoute.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="TravelNetwork.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="TravelGUI.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="Booking.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="PreisAngebot.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="PreisMap.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
